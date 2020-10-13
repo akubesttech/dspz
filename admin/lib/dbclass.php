@@ -1,12 +1,12 @@
 <?php
 
 define('DB_DRIVER', 'mysql');
-define('SERVER', '216.198.69.150');
-define('USERNAME', 'dspozorosmart');
+define('SERVER', 'localhost');
+define('USERNAME', 'deltasma_dspozorosmart');
 define('PASSWORD', 'dspozorosmart_2019p#');
-define('DATABASE', 'dspozorosmartdb');
-define('t_gate', 'sk_test_f25387f9786e8b38a4f90de7a58f826320334cc6');
-//define('t_gate', 'sk_live_8f7cf2b947e59b96ce79e8d71135a8f42ed5d5b3');
+define('DATABASE', 'deltasma_dspozorosmartdb');
+//define('t_gate', 'sk_test_f25387f9786e8b38a4f90de7a58f826320334cc6');
+define('t_gate', 'sk_live_8f7cf2b947e59b96ce79e8d71135a8f42ed5d5b3');
 class Database
 {
 
