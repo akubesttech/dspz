@@ -7,6 +7,9 @@ define('PASSWORD', 'dspozorosmart_2019p#');
 define('DATABASE', 'deltasma_dspozorosmartdb');
 //define('t_gate', 'sk_test_f25387f9786e8b38a4f90de7a58f826320334cc6');
 define('t_gate', 'sk_live_8f7cf2b947e59b96ce79e8d71135a8f42ed5d5b3');
+//other creaditials 
+define('t_ACCTS', ''); //for school
+define('t_ACCTB', ''); // for Bisapp
 class Database
 {
 

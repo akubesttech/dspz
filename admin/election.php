@@ -1,3 +1,4 @@
+
 <?php  include('header.php'); ?>
 <?php include('session.php');
 	$status = FALSE;
@@ -7,18 +8,16 @@ authorize($_SESSION["access3"]["emanag"]["velect"]["view"]) ||
 authorize($_SESSION["access3"]["emanag"]["velect"]["delete"]) ) {
  $status = TRUE;
 }
-
-
  ?>
-
+	
 		    	
 
  <?php include('admin_slidebar.php'); ?>
     <?php include('navbar.php');
 	if ($status === FALSE) {message("You don't have the permission to access this page", "error");
 		        redirect('./'); } ?>
-  <?php $get_RegNo= $_GET['id']; 
-  $get_staff= $_GET['allot_id'];
+  <?php $get_RegNo= isset($_GET['id']) ? $_GET['id'] : ''; 
+  $get_staff= isset($_GET['allot_id']) ? $_GET['allot_id'] : '';
   	
   ?>
   
@@ -178,7 +177,7 @@ echo "Candidates List";}if($_GET['view'] == "velection"){echo "Election List";
 
 
          <?php include('footer.php'); ?>
-         <?php
+         <?php 
   $sql = "SELECT * FROM post_tb WHERE ecate1 = '".safee($condb,$ecat)."' ORDER BY position ASC";
   $query = mysqli_query($condb,$sql);
     while($row = mysqli_fetch_assoc($query)){
@@ -253,6 +252,4 @@ $sql = "SELECT * FROM candidate_tb WHERE post = '".$row['postid']."' and ecate =
       //document.getElementById('legend_'+rowid).innerHTML = myChart.generateLegend();
     });
     </script>
-    <?php
-  }
-?>
+    <?php } ?>
