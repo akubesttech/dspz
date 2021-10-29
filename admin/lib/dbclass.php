@@ -10,6 +10,7 @@ define('t_gate', 'sk_live_8f7cf2b947e59b96ce79e8d71135a8f42ed5d5b3');
 //other creaditials 
 define('t_ACCTS', ''); //for school
 define('t_ACCTB', ''); // for Bisapp
+define('t_ACCTSP', ''); // for school Penaty Account
 class Database
 {
 
@@ -75,6 +76,9 @@ try {
 define('SUDO_M', "xculp8_edu2019#,!");
 define('ROOTNO', "/");
 define('showfullresult', 'no'); // display full result : yes and not full result no (letter case as specified (yes/no))
+define('setinstallment', '2'); // define payment installment for school payment i.e 2 for twices installment.
+define('setresultuptype', '1'); // define result upload if enabled = 1 course registration is required else course registration is uptional = 0.
+
 /*
 define('SERVER', 'localhost');
 define('USERNAME', 'root');
